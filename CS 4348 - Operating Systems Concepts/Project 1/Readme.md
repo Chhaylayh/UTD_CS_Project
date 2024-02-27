@@ -1,6 +1,4 @@
-# CS 4348 - Operating Systems 
-
-## Project #1:  Exploring Multiple Processes and IPC
+# Project #1:  Exploring Multiple Processes and IPC
 
 ### Source Files:
 	Project1.java
