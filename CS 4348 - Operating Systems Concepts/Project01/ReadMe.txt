@@ -1,22 +1,20 @@
-CS 4348 Project 1
+CS 4348 - Operating Systems 
 
-Chhay Lay Heng [cxh220032]
+Project #1:  Exploring Multiple Processes and IPC
 
 Source Files:
 	Project1.java
-		Runs the program and contains CPU class
 	Memory.java
-		Runs the memory process
 
 Programs:
 	sample1.txt
 	sample2.txt
 	sample3.txt
 	sample4.txt
+	sample5.txt
 
 How to compile:
 	javac Project1.java Memory.java
 
 How to run:
-	java Project1 [input program] [interrupt timeout]
-	EX: java Project1 sample4.txt 30
+	java Project1 sample1.txt 30
