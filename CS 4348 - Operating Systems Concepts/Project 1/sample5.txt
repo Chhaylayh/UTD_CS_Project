@@ -1,3 +1,5 @@
+// Generate 3 random numbers from 1 to 99
+
 8	// Get 
 9	// Put 1
 1	// Load 1
