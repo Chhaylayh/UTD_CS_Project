@@ -1,8 +1,8 @@
 # Project #1:  Exploring Multiple Processes and IPC
 
 ## Source Files:
-	Project1.java
-	### Memory.java
+### Project1.java
+### Memory.java
 
 ## Programs:
 	sample1.txt
