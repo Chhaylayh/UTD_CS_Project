@@ -1,0 +1,22 @@
+8	// Get 
+9	// Put 1
+1	// Load 1
+1	// Load 32
+32	// Add Space
+9	// Put 2
+2	
+8	// Get 
+9	// Put 1
+1	// Load 1
+1	// Load 32
+32	// Add Space
+9	// Put 2
+2	
+8	// Get 
+9	// Put 1
+1	// Load 1
+1	// Load 32
+10	// AddX
+9	// Put 2
+2	
+50	// End
