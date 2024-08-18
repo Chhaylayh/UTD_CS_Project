@@ -1,4 +1,3 @@
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -13,6 +12,7 @@ public class MazeC extends JPanel implements ActionListener {
     private String path;
 
     public MazeC(int[][] maze, int cellSize) {
+        
         this.maze = maze;
         this.n = maze.length;
         this.m = maze[0].length;
@@ -31,8 +31,10 @@ public class MazeC extends JPanel implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
+    
         this.drawPath = true;
         Maze mazeSolver = new Maze(maze);
+        
         if (mazeSolver.solveMaze()) {
             this.path = mazeSolver.getPath();
         }
@@ -44,7 +46,9 @@ public class MazeC extends JPanel implements ActionListener {
     }
 
     public void paintComponent(Graphics g) {
+        
         super.paintComponent(g);
+        
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 int x = j * cellSize;
@@ -64,12 +68,15 @@ public class MazeC extends JPanel implements ActionListener {
                 }
             }
         }
+        
         if (drawPath) {
             g.setColor(Color.RED);
             int x = 0;
             int y = 0;
+            
             for (int i = 0; i < path.length(); i++) {
                 char c = path.charAt(i);
+                
                 switch (c) {
                     case 'S':
                         g.drawLine(x, y, x, y + cellSize);
