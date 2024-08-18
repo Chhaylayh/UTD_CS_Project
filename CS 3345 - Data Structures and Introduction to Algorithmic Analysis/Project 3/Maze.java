@@ -1,27 +1,23 @@
 import java.util.*;
 
-public class Maze 
-{
+public class Maze {
     private int[][] maze;
     private int n;
     private int m;
     private Random rand;
 
-    public Maze(int n, int m) 
-    {
+    public Maze(int n, int m) {
         this.n = n;
         this.m = m;
         this.maze = new int[n][m];
         this.rand = new Random();
     }
     
-    public void generateMaze() 
-    {
+    public void generateMaze() {
+        
         // Initialize maze with all walls present
-        for (int i = 0; i < n; i++) 
-        {
-            for (int j = 0; j < m; j++) 
-            {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
                 maze[i][j] = 15; // 15 = 0b1111 (all walls present)
             }
         }
@@ -34,8 +30,7 @@ public class Maze
         generateMazeRecursive(0, 0);
     }
     
-    private void generateMazeRecursive(int x, int y) 
-    {
+    private void generateMazeRecursive(int x, int y)  {
         int[] dx = {1, 0, -1, 0};
         int[] dy = {0, 1, 0, -1};
         List<Integer> directions = Arrays.asList(0, 1, 2, 3);
