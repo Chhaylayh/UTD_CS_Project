@@ -7,4 +7,4 @@ Introduces the concepts of computer architecture by going through multiple level
 The assignment was to create a Tic-Tac-Toe game using MIPS Assembl Language
 
 - CS 2340 Project.asm
-- Com
+- Computer Architecture MIPS Assembly Modules Needed.txt
