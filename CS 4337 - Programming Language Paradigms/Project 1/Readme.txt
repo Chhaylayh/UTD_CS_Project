@@ -1,6 +1,5 @@
 - List the files included in the archive and their purpose:
 	- Project01.rtk -- source code
-	- Write-up -- Answer the question regarding the project
 
 - Explain how to compile and run your project
 	- To compile and run the project, first is to open the project then click run or (CTRL + R)
