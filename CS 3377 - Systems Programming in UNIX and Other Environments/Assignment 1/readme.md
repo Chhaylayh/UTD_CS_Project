@@ -1,3 +1,3 @@
-# bison
-# LineInfo
-# Assignment 1
+- bison
+- LineInfo
+- Assignment 1
