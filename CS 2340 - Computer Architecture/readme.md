@@ -8,3 +8,4 @@ The assignment was to create a Tic-Tac-Toe game using MIPS Assembl Language
 
 - CS 2340 Project.asm
 - Computer Architecture MIPS Assembly Modules Needed.txt
+- Computer Architecture User Manual.txt
