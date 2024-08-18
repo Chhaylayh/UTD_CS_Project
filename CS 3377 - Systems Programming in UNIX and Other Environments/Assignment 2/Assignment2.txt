@@ -1,0 +1,22 @@
+{cslinux1:~/Assignment2} g++ -std=c++11 diagonal2.cpp -o diagonal2
+{cslinux1:~/Assignment2} ./diagonal2 WoW Sumptuous
+diagonal2.bin has been created.
+Use od -c diagonal2.bin to see the contents.
+{cslinux1:~/Assignment2} od -c diagonal2.bin
+0000000   W   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .
+0000020   .   o   .   .   .   .   .   .   .   .   .   .   .   .   .   .
+0000040   .   .   W   .   .   .   .   .   .   .   .   .   .   .   .   .
+0000060   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .
+*
+0000220   .   .   .   .   .   .   .   .   .   S   .   .   .   .   .   .
+0000240   .   .   .   .   .   .   .   .   .   .   u   .   .   .   .   .
+0000260   .   .   .   .   .   .   .   .   .   .   .   m   .   .   .   .
+0000300   .   .   .   .   .   .   .   .   .   .   .   .   p   .   .   .
+0000320   .   .   .   .   .   .   .   .   .   .   .   .   .   t   .   .
+0000340   .   .   .   .   .   .   .   .   .   .   .   .   .   .   u   .
+0000360   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   o
+0000400  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0
+0000420   u  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0
+0000440  \0   s
+0000442
+{cslinux1:~/Assignment2} 
