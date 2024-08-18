@@ -2,7 +2,6 @@
 
 ## Documents
 - 06 Sockets Guess Number
-- activities.txt
 - LineInfo.h
 - sockclient.cpp
 - sockserver.cpp
