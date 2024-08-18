@@ -1,4 +1,5 @@
-All MIPS Assembly Language Modules Needed for Tic Tac Toe Program
+## All MIPS Assembly Language Modules Needed for Tic Tac Toe Program
+
 1.	.data – contains the primary messages and the default game board array.
 2.	continue – Resumes the program flow after user and computer characters have been selected.
 3. 	comp – sets the other available character option as the computer’s character so that there is no conflict between the user and computer’s selected characters.
