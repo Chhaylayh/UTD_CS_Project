@@ -1,0 +1,59 @@
+#lang racket
+
+; Helper functions
+
+(define (char-numeric? c)
+  (and (char>=? c #\0) (char<=? c #\9)))
+
+; Evaluates a single expression
+(define (eval-expr expr history)
+  (cond
+    [(char-numeric? (car expr)) 
+     (let* [(value (string->number (list->string (list (car expr)))))
+            (remaining (cdr expr))]
+       (list value remaining))]
+
+    [(char=? (car expr) #\+) 
+     (let* [(lhs (eval-expr (cdr expr) history))
+            (rhs (eval-expr (cadr lhs) history))]
+       (list (+ (car lhs) (car rhs)) (cadr rhs)))]
+
+    [(char=? (car expr) #\*) 
+     (let* [(lhs (eval-expr (cdr expr) history))
+            (rhs (eval-expr (cadr lhs) history))]
+       (list (* (car lhs) (car rhs)) (cadr rhs)))]
+
+    [(char=? (car expr) #\/) 
+     (let* [(lhs (eval-expr (cdr expr) history))
+            (rhs (eval-expr (cadr lhs) history))]
+       (if (= (car rhs) 0)
+           (error "Division by zero.")
+           (list (/ (car lhs) (car rhs)) (cadr rhs))))]
+
+    [(char=? (car expr) #\-)
+     (let [(result (eval-expr (cdr expr) history))]
+       (list (- (car result)) (cadr result)))]
+
+    [(char=? (car expr) #\$)
+     (let* [(id (string->number (list->string (list (cadr expr)))))
+            (value (list-ref history (- id 1)))]
+       (list value (cddr expr)))]
+    
+    [else (error "Invalid Expression")]))
+
+; Main eval loop
+(define (eval-loop history)
+  (display "Enter your expression: ")
+  (let* [(input (read-line))
+         (expr (string->list input))
+         (result (eval-expr expr history))]
+    (if (null? (cadr result))
+        (let [(value (car result))]
+          (displayln (string-append "Result: " (number->string value)))
+          (eval-loop (cons value history)))
+        (begin
+          (displayln "Invalid Expression")
+          (eval-loop history)))))
+
+; Start the program
+(eval-loop '())
