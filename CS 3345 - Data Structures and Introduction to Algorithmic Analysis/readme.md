@@ -10,4 +10,4 @@ Implementation of Splay Trees
 Sorting algorithm
 
 ## Project 3
-
+Maze
