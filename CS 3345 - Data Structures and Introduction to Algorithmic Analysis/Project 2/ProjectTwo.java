@@ -4,24 +4,24 @@
 
 import java.util.*;
 
-public class ProjectTwo 
-{
-
-    public static void main(String[] args) 
-    {
+public class ProjectTwo {
+    
+    public static void main(String[] args) {
+        
         // Array Size
         int[] sizes = {1000, 10000, 100000}; 
         
         // Generate Random Number
         Random randomNum = new Random(); 
 
-        for (int size : sizes) 
-        {
+        for (int size : sizes)  {
+            
             int[] array = new int[size];
                 
            // Generate random array
-           for (int i = 0; i < size; i++)
+           for (int i = 0; i < size; i++) {
                array[i] = randomNum.nextInt();
+           }
 
             // Benchmarking MergeSort
             long startTime1 = System.currentTimeMillis();
@@ -31,8 +31,9 @@ public class ProjectTwo
             mergeSortTime = endTime1 - startTime1;
 
             // Reset Array
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < size; i++) {
                 array[i] = randomNum.nextInt();
+            }
 
             // Benchmarking Quicksort
             long startTime2 = System.currentTimeMillis();
@@ -48,13 +49,13 @@ public class ProjectTwo
         
         int[] randomSort = randomSequence(5);
         System.out.println("Random Sorted: " + Arrays.toString(randomSort));
-
+        
         int[] almostSort = almostSequence(5);
         System.out.println("Almost Sorted: " + Arrays.toString(almostSort));
     }
 
-    public static void merge(int[] array, int left, int mid, int right) 
-    {
+    public static void merge(int[] array, int left, int mid, int right) {
+        
         int midLeft = mid - left + 1;
         int midRight = right - mid;
 
@@ -62,55 +63,50 @@ public class ProjectTwo
         int[] leftArray = new int[midLeft];
         int[] rightArray = new int[midRight];
 
-        for (int i = 0; i < midLeft; i++)
+        for (int i = 0; i < midLeft; i++) {
             leftArray[i] = array[left + i];
+        }
 
-        for (int j = 0; j < midRight; j++)
+        for (int j = 0; j < midRight; j++) {
             rightArray[j] = array[mid + 1 + j];
+        }
 
         int i = 0;
         int j = 0;
 
-        while (i < midLeft && j < midRight) 
-        {
-            if (leftArray[i] <= rightArray[j]) 
-            {
+        while (i < midLeft && j < midRight) {
+            if (leftArray[i] <= rightArray[j]) {
                 array[left] = leftArray[i];
                 i++;
             } 
-            
-            else 
-            {
+            else {
                 array[left] = rightArray[j];
                 j++;
             }
-            
             left++;
         }
 
         // Copy the remaining elements of leftArray[]
-        while (i < midLeft) 
-        {
+        while (i < midLeft) {
             array[left] = leftArray[i];
             i++;
             left++;
         }
 
         // Copy the remaining elements of rightArray[]
-        while (j < midRight) 
-        {
+        while (j < midRight) {
             array[left] = rightArray[j];
             j++;
             left++;
         }
     }
 
-    public static void mergeSort(int[] array, int left, int right) 
-    {
-        if (left < right) 
-        {
+    public static void mergeSort(int[] array, int left, int right) {
+        
+        if (left < right) {
+            
             int mid = left + (right - left) / 2;
-
+            
             // Sort first and second halves
             mergeSort(array, left, mid);
             mergeSort(array, mid + 1, right);
@@ -118,27 +114,24 @@ public class ProjectTwo
         }
     }
 
-    public static int partition(int[] array, int left, int right) 
-    {
+    public static int partition(int[] array, int left, int right) {
+        
         // Median-of-three pivot selection
         int mid = left + (right - left) / 2;
 
-        if (array[mid] < array[left]) 
-        {
+        if (array[mid] < array[left]) {
             int temp1 = array[mid];
             array[mid] = array[left];
             array[left] = temp1;
         }
 
-        if (array[right] < array[left]) 
-        {
+        if (array[right] < array[left])  {
             int temp2 = array[right];
             array[right] = array[left];
             array[left] = temp2;
         }
 
-        if (array[mid] < array[right]) 
-        {
+        if (array[mid] < array[right]) {
             int temp3 = array[mid];
             array[mid] = array[right];
             array[right] = temp3;
@@ -148,10 +141,8 @@ public class ProjectTwo
         int pivot = array[right];
         int i = left - 1;
 
-        for (int j = left; j < right; j++) 
-        {
-            if (array[j] <= pivot) 
-            {
+        for (int j = left; j < right; j++) {
+            if (array[j] <= pivot) {
                 i++;
                 int temp = array[i];
                 array[i] = array[j];
@@ -167,43 +158,33 @@ public class ProjectTwo
         return i + 1;
     }
 
-    public static void quickSort(int[] array, int left, int right) 
-    {
-        if (left < right) 
-        {
+    public static void quickSort(int[] array, int left, int right) {
+        if (left < right) {
             // Use insertion sort for small subarrays
             if (right - left <= 15)
                 insertionSort(array, left, right);
-            
-            else 
-            {
-                int pivotIndex = partition(array, left, right);
-                
+            else {
+                int pivotIndex = partition(array, left, right);  
                 quickSort(array, left, pivotIndex - 1);
                 quickSort(array, pivotIndex + 1, right);
             }
         }
     }
 
-    public static void insertionSort(int[] array, int left, int right) 
-    {
-        for (int i = left + 1; i <= right; i++) 
-        {
+    public static void insertionSort(int[] array, int left, int right) {
+        for (int i = left + 1; i <= right; i++) {
             int pivotElement = array[i];
             int j = i - 1;
             
-            while (j >= left && array[j] > pivotElement) 
-            {
+            while (j >= left && array[j] > pivotElement) {
                 array[j + 1] = array[j];
                 j--;
             }
-            
             array[j + 1] = pivotElement;
         }
     }
     
-    public static int[] randomSequence(int size) 
-    {
+    public static int[] randomSequence(int size) {
         int[] array = new int[size];
         Random random = new Random();
 
@@ -213,8 +194,7 @@ public class ProjectTwo
         return array;
     }
     
-    public static int[] almostSequence(int size) 
-    {
+    public static int[] almostSequence(int size) {
         int[] array = new int[size];
         Random random = new Random();
 
