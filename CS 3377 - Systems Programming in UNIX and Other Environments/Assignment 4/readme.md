@@ -4,6 +4,5 @@
 - 04 Fork Execvp
 - calculate.cpp
 - forkexecvp.cpp
-- forkexecvpactivities.txt
 - LineInfo.h
 - randomnumber.txt
