@@ -1,6 +1,6 @@
 # Maze
 
-## Project 3
+## Documents
 - Maza.java
 - MazeC.java
 - MazeSolver.java
