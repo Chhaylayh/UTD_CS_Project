@@ -1,6 +1,6 @@
 # Assignment 1
 
-## Project
+## Document
 - Assignment 1.txt
 - bison.cpp
 - LineInfo.h
