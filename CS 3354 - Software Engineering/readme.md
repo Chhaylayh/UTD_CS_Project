@@ -11,3 +11,7 @@
 
 ## Project
 SMS Messenger Software
+
+## Documents
+- Project Proposal.docx
+- Final Project.pdf
