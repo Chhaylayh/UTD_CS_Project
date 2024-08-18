@@ -1,0 +1,33 @@
+{cslinux1:~/assign/assign04} g++ -std=c++11 calculate.cpp -o calculate
+
+{cslinux1:~/assign/assign04} g++ -std=c++11 forkexecvp.cpp -o forkexecvp
+
+{cslinux1:~/assign/assign04} ./forkexecvp randomnumber.txt 100 100
+
+./forkexecvp randomnumber.txt 100 100Parent pid: 9580 to Child Process No: 0
+Send Message : sum
+Parent pid: 9580 to Child Process No: 1
+Send Message : average
+./forkexecvp randomnumber.txt 100 100Child pid: 9581 Child Process No : 0
+Received Message : sum
+Child pid: 9581 Child Process No : 0
+execvp(./calculate, ./calculate, randomnumber.txt
+Parent pid: 9580 to Child Process No: 2
+Send Message : greatest
+Child pid: 9582 Child Process No : 1
+Received Message : average
+Child pid: 9582 Child Process No : 1
+execvp(./calculate, ./calculate, randomnumber.txt
+Child pid: 9583 Child Process No : 2
+Received Message : greatest
+Parent pid: 9580 to Child Process No: 3
+Child pid: 9583 Child Process No : 2
+execvp(./calculate, ./calculate, randomnumber.txt
+Send Message : least
+Parent pid: 9580 Start - Wait for calculate children to finished. 
+Child pid: 9584 Child Process No : 3
+Received Message : least
+Child pid: 9584 Child Process No : 3
+execvp(./calculate, ./calculate, randomnumber.txt
+Parent pid: 9580 Done - Wait for calculate children to finished. 
+{cslinux1:~/assign/assign04} 
