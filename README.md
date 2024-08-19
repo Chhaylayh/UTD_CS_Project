@@ -2,7 +2,9 @@
 
 
 ## Spring 2023
-
+- CS 2340 - Computer Architecture
+- CS 3345 - Data Structures and Introduction to Algorithmic Analysis
+- CS 3377 - Systems Programming in UNIX and Other Environments
 
 ## Fall 2023
 
