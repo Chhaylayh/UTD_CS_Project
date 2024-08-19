@@ -10,4 +10,6 @@ The assignment was to simulate a computer's CPU and memory and the communication
 The assignment was to simulate a movie theater box office, with multiple agents and customers. Each agent or customer was represented as a separate thread, and coordination between agents and customers were facilitated with semaphores to get customers through the simulation.
 
 ## Project 3 
-The assignment was to create a server that managed ticket reservations, and a client that connected to and communicated with the server through sockets.
+This project will simulate a scheduler scheduling a set of jobs.
+The project will allow the user to execute a set of scheduling algorithms on an input set of jobs.  It will output a representation of how the jobs are executed.
+
