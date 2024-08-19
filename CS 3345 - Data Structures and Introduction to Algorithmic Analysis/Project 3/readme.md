@@ -1,5 +1,6 @@
 # Maze
 
+<br></br> 
 ## Documents
 - Maza.java
 - MazeC.java
