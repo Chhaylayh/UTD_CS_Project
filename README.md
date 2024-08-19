@@ -11,3 +11,5 @@
 
 
 ## Fall 2024
+    -  CS 4391 - Introduction to Computer Vision
+
