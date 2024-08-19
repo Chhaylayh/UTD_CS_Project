@@ -9,4 +9,4 @@ Principles of design and implementation of contemporary programming languages. F
 In this project you will create an expression calculator. The calculator will prompt the user for an expression in prefix notation and calculate the result of the inputted expression. A history will be kept so that previous results can be used in expressions. You are expected to handle possible errors in the user’s input.
 
 ## Project 2
-In this project you will write a prolog program that can solve a maze, creating a predicate find exit/2 for the user to query.
+In this project you will write a prolog program that can solve a maze, creating a predicate find ```exit/2``` for the user to query.
