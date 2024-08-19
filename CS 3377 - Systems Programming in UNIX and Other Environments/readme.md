@@ -8,20 +8,26 @@ Basic UNIX concepts, commands and utilities, organization of UNIX file system in
 ## Assignment 1
 Bison
 
+<br></br>
 ## Assignment 2
 DIAGONAL - BINARY FILES
 
+<br></br>
 ## Assignment 3
 Fork
 
+<br></br>
 ## Assignment 4
 Fork Execvp
 
+<br></br>
 ## Assignment 5
 Guess Word
 
+<br></br>
 ## Assignment 6
 Sockets Guess Number
 
+<br></br>
 ## Assignment 7
 Singers
