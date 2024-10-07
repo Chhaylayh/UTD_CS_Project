@@ -7,6 +7,7 @@ public class Driver {
     private static List<String> history = new ArrayList<>();
 
     public static void main(String[] args) {
+        
         if (args.length != 1) {
             System.out.println("Usage: java DriverProgram <logFileName>");
             return;
