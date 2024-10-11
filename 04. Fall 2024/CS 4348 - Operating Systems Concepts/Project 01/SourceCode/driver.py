@@ -1,5 +1,5 @@
 import sys
-import os
+
 from subprocess import Popen, PIPE
 
 def main(log_file):
