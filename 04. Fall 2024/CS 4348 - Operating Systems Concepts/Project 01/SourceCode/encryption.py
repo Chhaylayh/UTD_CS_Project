@@ -1,4 +1,3 @@
-# encryption.py
 import sys
 
 passkey = None

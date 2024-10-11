@@ -1,4 +1,3 @@
-# driver.py
 import sys
 import os
 from subprocess import Popen, PIPE
