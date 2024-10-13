@@ -1,49 +1,87 @@
 import sys
 
+# Global variable to store the encryption passkey
 passkey = None
 
-def vigenere_encrypt(text, key):
-    encrypted = []
-    for i, char in enumerate(text):
-        shift = ord(key[i % len(key)]) - ord('A')
-        encrypted_char = chr((ord(char) - ord('A') + shift) % 26 + ord('A'))
-        encrypted.append(encrypted_char)
-    return ''.join(encrypted)
+def encrypt(text, key):
 
-def vigenere_decrypt(text, key):
-    decrypted = []
+    # Array list to store the encrypted characters
+    encrypted = []
+
+    # Encrypt each character in the text
     for i, char in enumerate(text):
-        shift = ord(key[i % len(key)]) - ord('A')
-        decrypted_char = chr((ord(char) - ord('A') - shift + 26) % 26 + ord('A'))
-        decrypted.append(decrypted_char)
-    return ''.join(decrypted)
+        shift = ord(key[i % len(key)]) - ord("A")
+        encryptedChar = chr((ord(char) - ord("A") + shift) % 26 + ord("A"))
+        encrypted.append(encryptedChar)
+    
+    # Join list into a single string and return
+    return "".join(encrypted)
+
+def decrypt(text, key):
+
+    # Array list to store decrypted characters
+    decrypted = []
+
+    # Decrypt each character in the text
+    for i, char in enumerate(text):
+        shift = ord(key[i % len(key)]) - ord("A")
+        decryptedChar = chr((ord(char) - ord("A") - shift + 26) % 26 + ord("A"))
+        decrypted.append(decryptedChar)
+
+    # Join list into a single string and return
+    return "".join(decrypted)
 
 def main():
+    
+    # Declare the global passkey variable for use within this function
     global passkey
+    
+    # Loop to continuously read and process user commands
     while True:
+
+        # Read input from standard input and strip whitespace
         line = sys.stdin.readline().strip()
+        
+        # Skip empty lines
         if not line:
             continue
+
+        # Split input into command and argument
         command, *args = line.split(" ", 1)
+
+        # If argument exists, assign it; otherwise, assign an empty string
         argument = args[0] if args else ""
         
+        # Command to set the passkey for encryption and decryption
         if command == "PASSKEY":
             passkey = argument.upper()
             print("RESULT")
+        
+         # Command to encrypt text
         elif command == "ENCRYPT":
             if passkey is None:
                 print("ERROR Password not set")
             else:
-                encrypted_text = vigenere_encrypt(argument.upper(), passkey)
-                print(f"RESULT {encrypted_text}")
+                encryptedText = encrypt(argument.upper(), passkey)
+                print(f"RESULT {encryptedText}")
+        
+         # Command to decrypt text
         elif command == "DECRYPT":
             if passkey is None:
                 print("ERROR Password not set")
             else:
-                decrypted_text = vigenere_decrypt(argument.upper(), passkey)
-                print(f"RESULT {decrypted_text}")
+                decryptedText = decrypt(argument.upper(), passkey)
+                print(f"RESULT {decryptedText}")
+        
+         # Command to quit the program
         elif command == "QUIT":
             break
+
+        # Handle any unrecognized commands
+        else:
+            print("ERROR Invalid command")
+
+        # Ensure output by flushing the standard output buffer
         sys.stdout.flush()
 
 if __name__ == "__main__":

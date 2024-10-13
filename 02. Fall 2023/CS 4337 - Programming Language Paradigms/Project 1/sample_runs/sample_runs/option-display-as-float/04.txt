@@ -1,0 +1,9 @@
+Enter Expression: */17 100 215
+1: 36.55
+Enter Expression: +215-$1
+2: 178.45
+Enter Expression: */40 100 $2
+3: 71.38
+Enter Expression: +$2-$3
+4: 107.07
+Enter Expression: quit

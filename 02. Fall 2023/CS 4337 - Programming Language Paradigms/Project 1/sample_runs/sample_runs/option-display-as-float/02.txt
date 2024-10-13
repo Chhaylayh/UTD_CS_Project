@@ -1,0 +1,9 @@
+Enter Expression: /+++80 100 90 79 4
+1: 87.25
+Enter Expression: /++/85 90 /78 90 /84 90 3
+2: 0.9148148148148149
+Enter Expression: *100$2
+3: 91.48148148148148
+Enter Expression: +/*$1 40 100 /*$3 60 100
+4: 89.78888888888889
+Enter Expression: quit

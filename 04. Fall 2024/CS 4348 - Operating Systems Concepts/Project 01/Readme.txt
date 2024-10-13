@@ -7,8 +7,7 @@ List the files included in the archive and their purpose:
 
 Explain how to compile and run your project
 	- Save logger.py, encryption.py and driver.py in the same directory
-    - Run driver.py with the log file name as an argument.
-    - Example:
+    - Run driver.py with the log file name as an argument:
         python driver.py log.txt
 
 Include any other notes that the TA may need

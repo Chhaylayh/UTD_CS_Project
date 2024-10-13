@@ -1,9 +1,0 @@
-MIPS Tic Tac Toe Game User Manual
-
-1. 	At start of the game, the game board will be displayed with the cells numbered 1-9 as a visual reference and the user will be prompted to select either an X or O as their respective character while the computer selects one of the two characters that is not used.
-2. 	Next, the user will be prompted to select which cell they would like to place their character in as their move.
-3. 	Then the user will see the updated board display with their character in the cell that they have chosen.
-4. 	The computer will place its character in an empty cell and the user will see the updated board display again this time with the computer’s move.
-5. 	The user and computer will continue taking turns until one player has three in a row of their respective character either horizontally, vertically, or diagonally to be declared as the winner.
-6. 	In the event that all cells on the game board are filled up with neither player having three in a row, then the game is declared as a tie/draw.
-7. 	Once the game is over, the user can clear the console output fully and then they can play the game again if they want to.

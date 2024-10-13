@@ -1,0 +1,16 @@
+1: 256
+Enter Expression: +$1-1
+2: 255
+Enter Expression: *$1$1
+3: 65536
+Enter Expression: +$3-1
+4: 65535
+Enter Expression: *$3$3
+5: 4294967296
+Enter Expression: +$5-1
+6: 4294967295
+Enter Expression: *$5$5
+7: 18446744073709551616
+Enter Expression: +$7-1
+8: 18446744073709551615
+Enter Expression: quit

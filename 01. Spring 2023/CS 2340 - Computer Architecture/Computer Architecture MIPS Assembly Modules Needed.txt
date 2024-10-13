@@ -1,0 +1,21 @@
+All MIPS Assembly Language Modules Needed for Tic Tac Toe Program
+
+1.	.data – contains the primary messages and the default game board array.
+2.	continue – Resumes the program flow after user and computer characters have been selected.
+3. 	comp – sets the other available character option as the computer’s character so that there is no conflict between the user and computer’s selected characters.
+4.	boardDisplay, Loop – displays the updated game board with user’s and computer’s moves.
+5. 	isXorO – Prints the character onto the board.
+6. 	checkRow1_X, checkRow2_X, checkRow3_X, checkColumn1_X, checkColumn2_X, checkColumn3_X, checkDiagonal1_X, checkDiagonal2_X, checkRow1_O, checkRow2_O, checkRow3_O, checkColumn1_O, checkColumn2_O, checkColumn3_O, checkDiagonal1_O, and checkDiagonal2_O – checks if user has won the game by having three of their respective character in a row vertically, horizontally, or diagonally.
+7. 	checkRow1_X_comp, checkRow2_X_comp, checkRow3_X_comp, checkColumn1_X_comp, checkColumn2_X_comp, checkColumn3_X_comp, checkDiagonal1_X_comp, checkDiagonal2_X_comp, checkRow1_O_comp, checkRow2_O_comp, checkRow3_O_comp, checkColumn1_O_comp, checkColumn2_O_comp. checkColumn3_O_comp, checkDiagonal1_O_comp, checkDiagonal2_O_comp – checks if computer has won the game by having three of its respective characters in a row vertically, horizontally, or diagonally.
+8. 	tie_game, tie – prints a tie game message.
+9. 	compMove – handles computer’s moves.
+10.  	userMove – handles user's moves.
+11.  	userWin – displays the user winner message.
+12.  	compWin – displays the computer winner message.
+13.  	turn – handles the turn-based game logic.
+14.  	turnEndUser – displays the board indicating the user as the winner.
+15.  	turnEndComp – displays the board indicating the computer as the winner.
+16.  	end – terminates the program.
+17.  	Else, skipDivider – helps with placing dividers at the right places on the game board.
+18.  	checkWinUser – verifies and confirms the user as the winner.
+19.  	checkWinComp – verifies and confirms the computer as the winner.

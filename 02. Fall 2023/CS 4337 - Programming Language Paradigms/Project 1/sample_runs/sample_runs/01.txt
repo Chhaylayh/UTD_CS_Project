@@ -1,0 +1,9 @@
+Enter Expression: 1
+1: 1
+Enter Expression: 2
+2: 2
+Enter Expression: 3
+3: 3
+Enter Expression: **$3$2$1
+4: 6
+Enter Expression: quit

@@ -1,0 +1,9 @@
+Enter Expression: */17 100 215
+1: 731/20
+Enter Expression: +215-$1
+2: 3569/20
+Enter Expression: */40 100 $2
+3: 3569/50
+Enter Expression: +$2-$3
+4: 10707/100
+Enter Expression: quit

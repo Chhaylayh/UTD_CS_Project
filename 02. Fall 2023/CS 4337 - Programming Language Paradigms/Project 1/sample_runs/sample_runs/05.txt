@@ -1,0 +1,21 @@
+Enter Expression: /1 0
+Error: Invalid expression
+Enter Expression: 0
+1: 0
+Enter Expression: /14 $1
+Error: Invalid expression
+Enter Expression: +10
+Error: Invalid expression
+Enter Expression: ++10 11
+Error: Invalid expression
+Enter Expression: 0.15
+Error: Unexpected trailing characters
+Enter Expression: +5 .6
+Error: Unexpected trailing characters
+Enter Expression: .6
+Error: Unexpected trailing characters
+Enter Expression: 1 1
+Error: Unexpected trailing characters
+Enter Expression: 5/6
+Error: Unexpected trailing characters
+Enter Expression: quit
